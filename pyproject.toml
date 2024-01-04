@@ -27,6 +27,7 @@ odmantic = "^1.0.0"
 msgspec = "^0.18.5"
 sqlalchemy = "^2.0.24"
 attrs = "^23.2.0"
+anyio = "^4.2.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -34,7 +35,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
 select = ["ALL"]
-ignore = ["D", "ANN101", "TRY003", "COM812", "ISC001"]
+ignore = ["D", "ANN101", "ANN401", "TRY003", "COM812", "ISC001"]
 target-version = "py312"
 fixable = ["ALL"]
 
